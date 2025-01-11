@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals by Hyrum Morales. Home page showcasing design and development skills.">
+    <meta name="author" content="Hyrum Morales">
+    <title>WDD 131 - Dynamic Web Fundamentals - Hyrum Morales</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Hyrum Morales</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/hyrum-morales-33ab711a0/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/11?lang=eng&id=p23#p23">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <!-- About Me Section -->
+        <section class="card">
+            <img src="images/HyrumpPicture.jpg" alt="A picture of Hyrum Morales">
+            <div>
+                <h2>About Me</h2>
+                <p>My name is Hyrum Morales. I love web development and enjoy helping others learn new technologies. I’m
+                    currently studying at BYU-Pathway Worldwide.</p>
+            </div>
+        </section>
+
+        <!-- My Location Section -->
+        <section class="card">
+            <img src="images/panajachel.jpeg" alt="Panajachel, Guatemala">
+            <div>
+                <h2>My Location</h2>
+                <h3>Quetzaltenango, Guatemala</h3>
+                <p>Quetzaltenango is a vibrant city known for its culture and history. It's my home and a place I love
+                    dearly.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Hyrum Morales, Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

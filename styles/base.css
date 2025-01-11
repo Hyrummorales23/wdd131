@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: "Poppins", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-weight: 200;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+h2,
+h3 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+/* Header */
+header {
+    background: #00274d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Centers navigation links */
+    background: #111;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /* Horizontal layout for larger screens */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s;
+    flex: 1;
+    /* Distributes links evenly */
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.active {
+    color: yellow;
+    /* Active link style */
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    /* Limits the width of main content */
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+    display: grid;
+    /* CSS Grid layout */
+    grid-template-columns: 150px 1fr;
+    /* Two columns: image + text */
+    gap: 20px;
+    /* Space between grid items */
+    align-items: center;
+    /* Vertically centers content */
+    margin-bottom: 20px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 100%;
+    /* Prevents overflow */
+    height: auto;
+    /* Maintains aspect ratio */
+    width: 150px;
+    /* Fixed width for smaller images */
+    border-radius: 5px;
+    display: block;
+    /* Ensures proper alignment */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #00274d;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+        /* Stacks nav links vertically on small screens */
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        /* Stacks content vertically */
+        text-align: center;
+    }
+
+    .card img {
+        margin: 0 auto;
+        /* Centers the image */
+    }
+}
