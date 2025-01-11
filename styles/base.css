@@ -94,16 +94,11 @@ main {
 
 .card img {
     max-width: 100%;
-    /* Prevents overflow */
     height: auto;
-    /* Maintains aspect ratio */
     width: 150px;
-    /* Fixed width for smaller images */
     border-radius: 5px;
     display: block;
-    /* Ensures proper alignment */
 }
-
 
 /* Footer */
 footer {
@@ -117,7 +112,6 @@ footer {
 @media (max-width: 640px) {
     nav ul {
         flex-direction: column;
-        /* Stacks nav links vertically on small screens */
     }
 
     .card {
@@ -128,6 +122,5 @@ footer {
 
     .card img {
         margin: 0 auto;
-        /* Centers the image */
     }
 }
