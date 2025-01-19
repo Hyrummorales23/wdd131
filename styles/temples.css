@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #00274d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background: #00274d;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* General grid styles for temple pictures */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* Space between images */
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+figure {
+    flex: 1 1 calc(25% - 1rem);
+    /* Adjusts image width dynamically */
+    max-width: 300px;
+    /* Set a maximum width for the images */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Footer styles for responsive display */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Hamburger button styles */
+nav {
+    background-color: var(--accent-color);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    font-family: 'Poppins', Arial;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0.25rem 2vw;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "x";
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 0.75rem 2vw;
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Poppins', Arial;
+}
+
+li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--accent-color);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 38rem) {
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+}
+
+/* Responsive adjustments for the grid */
+@media only screen and (max-width: 768px) {
+    figure {
+        flex: 1 1 calc(50% - 1rem);
+        /* 2 images per row for medium screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    figure {
+        flex: 1 1 100%;
+        /* 1 image per row for small screens */
+    }
+}
