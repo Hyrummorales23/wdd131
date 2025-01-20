@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', helvetica, sans-serif;
+}
+
+/* Header, Main, Footer Centering */
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Banner Replacement for Marquee */
+.banner {
+    padding: 1rem;
+    background-color: #004080;
+    color: white;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Main Content Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Adjust the Heading to Span Two Columns */
+h2 {
+    grid-column: span 2;
+    color: navy;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* Article and List Styling */
+article p {
+    text-align: justify;
+}
+
+ul {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Callout Section with Fixed Contrast */
+.callout {
+    color: #ffffff;
+    /* Improved text color for accessibility */
+    background-color: #004080;
+    /* Improved background for contrast */
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+    /* Left-align the footer content */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        /* Single-column layout for smaller screens */
+    }
+
+    h2 {
+        grid-column: span 1;
+    }
+}
