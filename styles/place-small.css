@@ -1,0 +1,135 @@
+/* Define font variables */
+:root {
+    --font-caveat: "Caveat", serif;
+    --font-poppins: "Poppins", serif;
+    --font-weight-caveat: 700;
+    --font-weight-poppins: 200;
+
+    --blue: #156096;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-poppins);
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+header h1 {
+    font-family: var(--font-caveat);
+    font-weight: var(--font-weight-caveat);
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem;
+}
+
+h2 {
+    font-family: var(--font-caveat);
+    font-weight: var(--font-weight-caveat);
+    color: var(--blue);
+}
+
+section,
+footer {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-poppins);
+    color: var(--blue);
+}
+
+header {
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.weather-icon {
+    font-size: 2rem;
+}
+
+.weather .wind-chill {
+    font-weight: bold;
+    color: var(--red);
+}
+
+.data-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns: auto for labels, 1fr for values */
+    gap: 0.5rem 1rem;
+    /* Spacing between items */
+    grid-template-rows: auto 1fr;
+}
+
+.weather-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns: auto for labels, 1fr for values */
+    gap: 0.5rem 1rem;
+    /* Spacing between items */
+    grid-template-rows: auto auto 1fr;
+}
+
+h2 {
+    grid-column: span 2;
+}
+
+.data-card .data-item,
+.weather-card .weather-item {
+    display: contents;
+    /* Allow grid layout to manage alignment directly */
+}
+
+.data-card .label,
+.weather-card .label {
+    text-align: right;
+    /* Align the labels to the right */
+    font-weight: bold;
+}
+
+.data-card .value,
+.weather-card .value {
+    text-align: left;
+    /* Align the values to the left */
+}
+
+.weather-emoji {
+    display: none;
+}
+
+.weather-icon {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+    /* Center the image */
+    display: block;
+    grid-column: span 2;
+}

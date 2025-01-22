@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .data-card,
+    .weather-card {
+        position: absolute;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid var(--blue);
+        border-radius: 8px;
+    }
+
+    .data-card {
+        top: 80px;
+        left: 50px;
+        width: 30%;
+    }
+
+    .weather-card {
+        bottom: 80px;
+        right: 50px;
+        width: 30%;
+    }
+
+    .weather-icon {
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .weather-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-emoji {
+        display: inline;
+        /* Show emoji near the "Weather" heading */
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Guatemala</title>
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+    <script defer src="scripts/place.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>🇬🇹 Discover Guatemala 🇬🇹</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 768px)">
+                <img src="images/hero-large.webp" alt="A beautiful landscape of Guatemala">
+            </picture>
+            <div class="data-card">
+                <h2>Data 🌋</h2>
+                <div class="data-item">
+                    <span class="label">Area:</span>
+                    <span class="value">108,889 km²</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Population:</span>
+                    <span class="value">17 million</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Capital:</span>
+                    <span class="value">Guatemala City</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Languages:</span>
+                    <span class="value">Spanish and 22 Mayan languages</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">Guatemalan Quetzal (GTQ)</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">UTC−6</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+502</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.gt</span>
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <h2>
+                    Weather
+                    <span class="weather-emoji">🌤️</span>
+                </h2>
+                <div class="weather-item">
+                    <img src="images/weather-image.svg" alt="Weather icon" class="weather-icon">
+                </div>
+                <div class="weather-item">
+                    <span class="label">Temperature:</span>
+                    <span class="value">25°C</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Conditions:</span>
+                    <span class="value">Sligthly Cloudy</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind:</span>
+                    <span class="value">10 km/h</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind Chill:</span>
+                    <span class="value" id="wind-chill">N/A</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Hyrum Morales | Quetzaltenango, Guatemala</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </footer>
+    </main>
+</body>
+
+</html>
