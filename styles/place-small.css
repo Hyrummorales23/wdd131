@@ -121,10 +121,6 @@ h2 {
     /* Align the values to the left */
 }
 
-.weather-emoji {
-    display: none;
-}
-
 .weather-icon {
     max-width: 30%;
     height: auto;
