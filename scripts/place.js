@@ -1,12 +1,16 @@
 // last modified date and current year
-const footer = document.querySelector('footer');
+const lastModifiedElement = document.querySelector('#last-modified');
 const currentYear = new Date().getFullYear();
 const lastModified = document.lastModified;
-footer.innerHTML += `<p>Last modified: ${lastModified}</p><p>&copy; ${currentYear} Hyrum Morales, Guatemala</p>`;
+
+// Update the last modified date and copyright message
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = lastModified;
+}
 
 // Calculate Wind Chill
-const tempC = 25; //temperature in Celsius
-const windSpeedKmh = 10; // K/h
+const tempC = 25; // Temperature in Celsius
+const windSpeedKmh = 10; // Wind speed in km/h
 
 function calculateWindChill(temp, speed) {
     return (
@@ -22,4 +26,4 @@ const windChill =
         ? calculateWindChill(tempC, windSpeedKmh)
         : 'N/A';
 
-document.querySelector('.wind-chill').textContent = `Wind Chill: ${windChill}°C`;
+document.querySelector('#wind-chill').textContent = `Wind Chill: ${windChill}°C`;
