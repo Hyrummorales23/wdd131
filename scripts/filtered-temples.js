@@ -5,7 +5,7 @@ document.getElementById("current-year").textContent = new Date().getFullYear();
 document.getElementById("last-modified").textContent = `Last Modified: ${document.lastModified}`;
 
 // Hamburger button //
-const hamburgerElement = document.querySelector('#myButton');
+const hamburgerElement = document.querySelector('#Menu');
 const navElement = document.querySelector('#animate');
 
 hamburgerElement.addEventListener('click', () => {

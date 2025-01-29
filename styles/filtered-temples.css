@@ -64,7 +64,7 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
-#myButton {
+#Menu {
     font-size: 2rem;
     background: none;
     border: none;
@@ -75,11 +75,11 @@ nav.open {
     padding: 0.25rem 2vw;
 }
 
-#myButton::before {
+#Menu::before {
     content: "\2630";
 }
 
-#myButton.open::before {
+#Menu.open::before {
     content: "x";
 }
 
