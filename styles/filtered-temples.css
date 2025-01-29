@@ -22,11 +22,11 @@ main {
     padding: 20px;
 }
 
-main h1 {
+main h2 {
     background-color: #0c0707;
     color: #f4f4f4;
-    border-radius: 20px;
-    padding: 0.5rem;
+    border-radius: 15px;
+    padding: 0.3rem;
     padding-left: 20px;
 }
 
