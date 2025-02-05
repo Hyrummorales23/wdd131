@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 75%;
+    margin: 1rem auto;
+    border-radius: 12px;
+}
+
+main {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 75%;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+legend {
+    margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    background: #f5f5f7;
+    transition: border 0.3s ease;
+    min-height: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0071e3;
+    outline: none;
+    background: white;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rating-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.rating-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-container input {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.rating-container label span {
+    font-size: 24px;
+    color: #0071e3;
+    cursor: pointer;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #0071e3;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #005bb5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 14px;
+    color: #6e6e73;
+}
