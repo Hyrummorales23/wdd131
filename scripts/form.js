@@ -1,10 +1,10 @@
-// ✅ Update Current Year in Footer
+//Current Year
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
-// ✅ Update Last Modified Date
+//Last Modified Date
 document.getElementById("last-modified").textContent = `Last Modified: ${document.lastModified}`;
 
-// ✅ Product List for the Select Dropdown
+// Product List for the Select Dropdown
 const products = [
     { id: "fc-1888", name: "Flux Capacitor" },
     { id: "fc-2050", name: "Power Laces" },
@@ -16,7 +16,7 @@ const products = [
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Page Loaded:", window.location.pathname);
 
-    // ✅ Populate the Product Dropdown
+    // Populate the Product Dropdown
     const productSelect = document.getElementById("product");
     if (productSelect) {
         products.forEach(product => {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ✅ Update Review Count in review.html
+    // Review Count in review.html
     if (window.location.pathname.includes("review.html")) {
         let count = localStorage.getItem("reviewCount") || 0;
         count++;

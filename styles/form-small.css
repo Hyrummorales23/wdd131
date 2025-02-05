@@ -126,3 +126,12 @@ footer {
     font-size: 14px;
     color: #6e6e73;
 }
+
+.optional {
+    color: #005bb5;
+    font-weight: 100;
+}
+
+.required {
+    color: #ab0505;
+}
